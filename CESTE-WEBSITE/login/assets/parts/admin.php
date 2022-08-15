@@ -62,27 +62,21 @@ if(isset($_SESSION['id']) && isset($_SESSION['email'])) {
             </div>
         </a>
         <a href="">
-            <span></span>
             <p>Inicio</p>
         </a>
-        <a href="">
-            <span></span>
+        <a href="./sections/DataP/Profile_Dates.php?Correct Access">
             <p>Datos</p>
         </a>
         <a href="">
-            <span></span>
             <p>Notas</p>
         </a>
         <a href="">
-            <span></span>
             <p>Actividades</p>
         </a>
-        <a href="">
-            <span></span>
+        <a href="./sections/chat/index.php?Chat list&grade='primero'">
             <p>Chat</p>
         </a>
         <a href="../../backend/logout.php">
-            <span></span>
             <p>Cerrar Sesion</p>
         </a>
     </header>
@@ -187,7 +181,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['email'])) {
 </html>
 <?php
 } else {
-    header("Location: ../../../../index.php");
+    header("Location: ../../../../index.php?Acces denied");
     exit();
 }
 ?>

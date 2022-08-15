@@ -41,7 +41,7 @@ if (isset($_POST['mail']) && isset($_POST['password'])) {
     }
 
 } else {
-    header("location: ../index.php");
+    header("location: ../index.php?Acces denied");
     exit();
 };
 ?>
